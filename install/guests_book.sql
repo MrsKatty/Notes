@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Авг 25 2020 г., 19:31
+-- Время создания: Авг 25 2020 г., 20:45
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.4.5
 
@@ -34,6 +34,14 @@ CREATE TABLE `group` (
   `name` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Имя',
   `cod` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Код'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `group`
+--
+
+INSERT INTO `group` (`id`, `name`, `cod`) VALUES
+(3, 'Пользователи ', 'users'),
+(4, 'Администратор', 'admin');
 
 -- --------------------------------------------------------
 
@@ -66,6 +74,13 @@ CREATE TABLE `todo` (
   `users_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_bin;
 
+--
+-- Дамп данных таблицы `todo`
+--
+
+INSERT INTO `todo` (`id`, `dateStart`, `content`, `dateEnd`, `project`, `priority`, `status`, `users_id`) VALUES
+(1, '2020-08-25 20:34:12', 'Сходить на работу', '2020-08-26 20:34:12', 'Работа', 'Главная', 'Выполняющиеся ', 30);
+
 -- --------------------------------------------------------
 
 --
@@ -79,6 +94,14 @@ CREATE TABLE `users` (
   `group_id` int(11) NOT NULL COMMENT 'Группа',
   `FIO` varchar(150) NOT NULL COMMENT 'ФИО'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `users`
+--
+
+INSERT INTO `users` (`id`, `login`, `password`, `group_id`, `FIO`) VALUES
+(30, '111', '0318bf93f2014b621cb3e57c428ede34', 3, 'Petrov'),
+(31, 'Admin', '2836a7191f6a9e2455b763469ca4ec6d', 4, 'Admin');
 
 --
 -- Индексы сохранённых таблиц
@@ -120,7 +143,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `group`
 --
 ALTER TABLE `group`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '№', AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '№', AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT для таблицы `guestbook`
@@ -132,13 +155,13 @@ ALTER TABLE `guestbook`
 -- AUTO_INCREMENT для таблицы `todo`
 --
 ALTER TABLE `todo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '№', AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '№', AUTO_INCREMENT=32;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц

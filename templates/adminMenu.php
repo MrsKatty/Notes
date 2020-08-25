@@ -10,14 +10,8 @@
             <li class="nav-item<?= $controllerType == '' ? ' active' : '' ?>">
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item<?= $controllerType == 'Orders' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=show&type=Orders">Заказы</a>
-            </li>
-            <li class="nav-item<?= $controllerType == 'products' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=show&type=products">Товары</a>
-            </li>
-            <li class="nav-item<?= $controllerType == 'reviews' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=show&type=reviews">Отзывы</a>
+            <li class="nav-item<?= $controllerType == 'todo' ? ' active' : '' ?>">
+                <a class="nav-link" href="?action=show&type=todo">Заметки</a>
             </li>
             <li class="nav-item<?= $controllerType == 'group' ? ' active' : '' ?>">
                 <a class="nav-link" href="?action=show&type=group">Group</a>

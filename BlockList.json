@@ -1,6 +1,6 @@
 {
     "admin": [],
-    "user": [
+    "users": [
         "group",
         "users"
     ],

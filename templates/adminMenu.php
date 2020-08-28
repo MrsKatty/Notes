@@ -14,20 +14,20 @@
                 <a class="nav-link" href="?action=show&type=todo">Заметки</a>
             </li>
             <li class="nav-item<?= $controllerType == 'group' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=show&type=group">Группы</a>
+                <a class="nav-link" href="?action=show&type=group">Группы пользователей</a>
             </li>
             <li class="nav-item<?= $controllerType == 'users' ? ' active' : '' ?>">
                 <a class="nav-link" href="?action=show&type=users">Пользователи</a>
             </li>
-            <li class="nav-item<?= $controllerType == 'auth' ? ' active' : '' ?>">
+            <!--<li class="nav-item<?= $controllerType == 'auth' ? ' active' : '' ?>">
                 <a class="nav-link" href="?action=loginform&type=auth">Login</a>
-            </li>
+            </li>-->
             <li class="nav-item<?= $controllerType == 'auth' ? ' active' : '' ?>">
                 <a class="nav-link" href="?action=logout&type=auth">Выход</a>
             </li>
-            <li class="nav-item<?= $controllerType == 'add' ? ' active' : '' ?>">
+            <!--<li class="nav-item<?= $controllerType == 'add' ? ' active' : '' ?>">
                 <a class="nav-link" href="?action=show&type=signup">Регистрация</a>
-            </li>
+            </li>-->
             <span class="navbar-text">
                     <?= !empty($_SESSION['user']) ? $_SESSION['user']['FIO'] . '(' . $_SESSION['user']['name'] . ')' : '' ?>
                 </span>

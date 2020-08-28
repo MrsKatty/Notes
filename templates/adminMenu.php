@@ -8,22 +8,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item<?= $controllerType == '' ? ' active' : '' ?>">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Домой <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item<?= $controllerType == 'todo' ? ' active' : '' ?>">
                 <a class="nav-link" href="?action=show&type=todo">Заметки</a>
             </li>
             <li class="nav-item<?= $controllerType == 'group' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=show&type=group">Group</a>
+                <a class="nav-link" href="?action=show&type=group">Группы</a>
             </li>
             <li class="nav-item<?= $controllerType == 'users' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=show&type=users">Users</a>
+                <a class="nav-link" href="?action=show&type=users">Пользователи</a>
             </li>
             <li class="nav-item<?= $controllerType == 'auth' ? ' active' : '' ?>">
                 <a class="nav-link" href="?action=loginform&type=auth">Login</a>
             </li>
             <li class="nav-item<?= $controllerType == 'auth' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=logout&type=auth">Logout</a>
+                <a class="nav-link" href="?action=logout&type=auth">Выход</a>
             </li>
             <li class="nav-item<?= $controllerType == 'add' ? ' active' : '' ?>">
                 <a class="nav-link" href="?action=show&type=signup">Регистрация</a>

@@ -7,7 +7,6 @@
     "default": [
         "group",
         "users",
-        "Phonebook",
-        "guestbook"
+        "todo"
     ]
 }

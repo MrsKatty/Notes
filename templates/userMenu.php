@@ -12,18 +12,15 @@ echo 123;
             <li class="nav-item<?= $controllerType == '' ? ' active' : '' ?>">
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item<?= $controllerType == 'products' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=show&type=products">Товары</a>
-            </li>
-            <li class="nav-item<?= $controllerType == 'reviews' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=show&type=reviews">Отзывы</a>
-            </li>
             <li class="nav-item<?= $controllerType == 'auth' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=loginform&type=auth">Login</a>
+                <a class="nav-link" href="?action=logout&type=auth">Выход</a>
             </li>
-            <li class="nav-item<?= $controllerType == 'auth' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=logout&type=auth">Logout</a>
-            </li>
+<!--            <li class="nav-item--><?//= $controllerType == 'auth' ? ' active' : '' ?><!--">-->
+<!--                <a class="nav-link" href="?action=loginform&type=auth">Login</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item--><?//= $controllerType == 'auth' ? ' active' : '' ?><!--">-->
+<!--                <a class="nav-link" href="?action=logout&type=auth">Logout</a>-->
+<!--            </li>-->
             <span class="navbar-text">
                     <?= !empty($_SESSION['user']) ? $_SESSION['user']['FIO'] . '(' . $_SESSION['user']['name'] . ')' : '' ?>
                 </span>

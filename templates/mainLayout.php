@@ -19,7 +19,7 @@
         case 'admin':
             include "adminMenu.php";
             break;
-        case 'user':
+        case 'users':
             include "userMenu.php";
             break;
         default:

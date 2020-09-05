@@ -38,9 +38,6 @@ echo Html::create("Pagination")
     <label> <?= $comments['priority'] ?>
         <input type="text" name="priority" id="priority">
     </label>
-    <!--<label> --><? //= $comments['status'] ?>
-    <!--    --><? //= (new Select())->setName('users_id')->setId('users_id')->setData($usersList)->html() ?>
-    <!--</label>>-->
     <label> <?= $comments['status'] ?>
         <?= (new Select())->setName('status')->setId('status')->setData(["0" => "Выполняющиеся", "1" => "Завершенная"])->html() ?>
     </label>

@@ -3,6 +3,7 @@
 use TexLab\Html\Select;
 use View\Html\Html;
 
+
 /** @var int $pageCount Количество страниц
  * @var array $fields Список полей таблицы
  * @var array $comments Комментарии к полям таблицы
@@ -41,7 +42,7 @@ echo Html::create("Pagination")
         <?= (new Select())->setName('status')->setId('status')->setData(["0" => "Выполняющиеся", "1" => "Завершенная"])->html() ?>
     </label>
     <label> <?= $comments['users_id'] ?>
-        <?= (new Select())->setName('users_id')->setId('users_id')->setData($usersList)->html() ?>
+        <input type="hidden" name="users_id" value="<?= $user_id ?>">
     </label>
     <label> <?= $comments['dateStart'] ?>
         <input type="datetime-local" name="dateStart" id="dateStart">
@@ -52,4 +53,4 @@ echo Html::create("Pagination")
     <input type="submit" value="Отправить">
     <a class="btn btn-primary" id="closeFormButton">Закрыть</a>
 </form>
-<div id="shadow" class="hidden"></div>
+<div id="shadow" class="hidden"></div> 

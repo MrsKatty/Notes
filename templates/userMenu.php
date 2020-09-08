@@ -1,6 +1,3 @@
-<?php
-echo 123;
-?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!--    <a class="navbar-brand" href="#">Navbar</a>-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -11,6 +8,9 @@ echo 123;
         <ul class="navbar-nav mr-auto">
             <li class="nav-item<?= $controllerType == '' ? ' active' : '' ?>">
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item<?= $controllerType == 'usertodo' ? ' active' : '' ?>">
+                <a class="nav-link" href="?action=show&type=usertodo">Заметки</a>
             </li>
             <li class="nav-item<?= $controllerType == 'auth' ? ' active' : '' ?>">
                 <a class="nav-link" href="?action=logout&type=auth">Выход</a>

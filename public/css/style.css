@@ -22,7 +22,7 @@
 
 .form input[type='submit'] {
     width: 100px;
-    background-color: red;
+    background-color: rgb(129, 51, 148);
     margin: 20px;
 }
 
@@ -48,8 +48,8 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid red;
-    background-color: cadetblue;
+    border: 1px solid rgb(52, 97, 246);
+    background-color: rgb(199, 107, 145);
     z-index: 2;
 }
 
@@ -64,7 +64,7 @@
 }
 .logAlert {
     /* border: 1px solid red !important; */
-    background-color: rgb(238, 140, 140);
+    background-color: rgb(96, 61, 211);
 
 }
 #loginform input{

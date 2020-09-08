@@ -21,13 +21,26 @@ foreach ($fields as $name => $value) {
             ->setName($name)
             ->setId($name)
             ->setData([
-                //     'do' => 'здесь',
-                //     'todo' => 'придумай'
-                // 'notodo' => 'сама'
+                0 => 'Выполняющиеся',
+                1 => 'Завершенная',
+
             ])
             ->html());
+    } elseif ($name == 'priority') {
+        $form->addContent((new Select())
+            ->setName($name)
+            ->setId($name)
+            ->setData([
+                0 => 'Главная',
+                1 => 'Второстепенная',
+
+            ])
+            ->html());
+    
+    // } elseif ($name == 'dateStart') {
+    //     $form->addContent(Html::create('Input')->setType('datetime-local')->setName($name)->setId($name)->setValue($value)->html());
     } else {
-        $form->addContent(Html::create('input')->setName($name)->setId($name)->setValue($value)->html());
+        $form->addContent(Html::create('Input')->setName($name)->setId($name)->setValue($value)->html());
     }
 }
 echo $form->addContent(Html::create('Input')->setType('hidden')->setName('id')->setValue($id)->html())

@@ -6,9 +6,22 @@ class DefaultController extends AbstractController
 {
     public function actionDefault(): void
     {
-        $this
-            ->view
-            ->setFolder('default')
-            ->setTemplate('default');
+
+        if (!empty($_SESSION["user"])) {
+            $this
+                ->view
+                ->setFolder('default')
+                ->setTemplate('default');
+        } else {
+            $this
+                ->view
+                ->setLayout('planeLayout')
+                ->setFolder('default')
+                ->setTemplate('notlogineddefault');
+        }
+        // $this
+        //     ->view
+        //     ->setFolder('default')
+        //     ->setTemplate('default');
     }
 }

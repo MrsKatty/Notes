@@ -31,10 +31,11 @@
     padding: 25px;
 }
 
-.guestbookform label{
+.guestbookform label {
     display: block;
     margin: 20px;
 }
+
 .hidden {
     display: none;
 }
@@ -60,14 +61,16 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
+
 .logAlert {
     /* border: 1px solid red !important; */
     background-color: rgb(96, 61, 211);
 
 }
-#loginform input{
+
+#loginform input {
     display: block;
 }
 
@@ -81,22 +84,25 @@
     position: absolute;
     left: 0;
     top: 0;
-    padding-top: 150px;
+    margin-top: 30px;
 
 }
+
 .header {
-    font-size: 55px;
+    font-size: 65px;
     font-weight: 700;
-    /*letter-spacing: 3px;*/
+    font-family: Grandstander;
 
 }
-.htwo{
-    font-size: 55px;
+
+.htwo {
+    font-size: 65px;
     font-weight: 700;
-    /*letter-spacing: 3px;*/
+    font-family: Grandstander;
 
 
 }
+
 .into_img {
     /*margin-top: 20px;*/
     width: 1200px;
@@ -104,21 +110,71 @@
     background-image: url("../img/1_JiVQchrgFBf7zVDm8xVtuA.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover ;
+    background-size: cover;
+
 
 }
+
 .login {
-   width: 150px;
+    width: 150px;
     height: 45px;
     /*background-color: #b9b6ee;*/
     background: linear-gradient(to right, #6e6ab0, #3c3966);
     text-align: center;
-    border-radius: 15px ;
+    border-radius: 15px;
     color: aliceblue;
     font-size: 23px;
-    padding-top: 3px;
-    margin-top: 20px;
-    /*font-family: "Times New Roman";*/
+    padding-top: 6px;
+    margin-top: 5px;
+    font-family: 'Grandstander', cursive;
+    font-family: 'Indie Flower', cursive;
     font-weight: 500;
     font-stretch: ultra-condensed;
+}
+
+#sign {
+    display: flex !important;
+    align-items: flex-end;
+}
+
+.signIn {
+    position: absolute !important;
+    left: 40%;
+    top: 30%;
+    font-family: 'Grandstander', cursive;
+    font-size: 25px;
+    background: linear-gradient(to top, #6e6ab0, #3c3966);
+    padding: 3%;
+    color: aliceblue;
+
+    
+
+}
+
+.signIn button {
+    background-color: #3c3966;
+    border: none;
+    margin-left: 30% ;
+    color: aliceblue;
+}
+
+.signUp {
+    position: absolute !important;
+    left: 33%;
+    top: 30%;
+    font-family: 'Grandstander', cursive;
+    font-size: 25px;
+    background: linear-gradient(to top, #6e6ab0, #3c3966);
+    padding: 3%;
+    color: aliceblue;
+    display: flex ;
+    flex-direction: column;
+
+}
+.okbuttom {
+    background-color: #3c3966;
+    border: none;
+    margin-left: 10% ;
+    color: aliceblue; 
+    border-radius: 15px;
 }

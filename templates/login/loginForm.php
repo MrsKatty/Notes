@@ -4,7 +4,7 @@
 ?>
 
 <div class="container">
-    <form action="<?=$action?>" method="post">
+    <form action="<?=$action?>" method="post" class="signIn">
         <div class="form-group">
             <label for="exampleInputEmail1">Login</label>
             <input type="text" class="form-control" name="login">

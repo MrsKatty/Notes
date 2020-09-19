@@ -3,16 +3,28 @@
 /** @var string $action */
 ?>
 
-<div class="container">
-    <form action="<?=$action?>" method="post" class="signIn">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Login</label>
-            <input type="text" class="form-control" name="login">
+<div class="picture_signIn">
+
+    <div class="form_signIn_container">
+
+    <form action="<?=$action?>" method="post" class="form_signIn">
+
+<div class="signIn">
+
+        <div class="label_signin">
+         <label for="exampleInputEmail1" class="margin_input_signin">Login</label>
+            <label for="exampleInputPassword1"class="margin_input_signin" >Password</label>
         </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+
+        <div class="input_signin">
+            <input type="text"  name="login" class="margin_input_signin">
+            <input type="password"  id="exampleInputPassword1" name="password" class="margin_input_signin">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+
+</div>
+        <div class="ok_In">
+            <input type="submit" value="Log in" class="okbuttomIn">
+        </div>
+</form>
+    </div>
 </div>

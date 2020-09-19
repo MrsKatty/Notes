@@ -100,7 +100,6 @@
     font-weight: 700;
     font-family: Grandstander;
 
-
 }
 
 .into_img {
@@ -111,8 +110,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-
 }
 
 .login {
@@ -137,44 +134,167 @@
     align-items: flex-end;
 }
 
-.signIn {
-    position: absolute !important;
-    left: 40%;
-    top: 30%;
-    font-family: 'Grandstander', cursive;
-    font-size: 25px;
-    background: linear-gradient(to top, #6e6ab0, #3c3966);
-    padding: 3%;
-    color: aliceblue;
 
-    
+/* Кнопка signUp */
 
-}
 
-.signIn button {
-    background-color: #3c3966;
-    border: none;
-    margin-left: 30% ;
-    color: aliceblue;
-}
-
-.signUp {
-    position: absolute !important;
-    left: 33%;
-    top: 30%;
-    font-family: 'Grandstander', cursive;
-    font-size: 25px;
-    background: linear-gradient(to top, #6e6ab0, #3c3966);
-    padding: 3%;
-    color: aliceblue;
-    display: flex ;
-    flex-direction: column;
-
-}
 .okbuttom {
     background-color: #3c3966;
     border: none;
-    margin-left: 10% ;
-    color: aliceblue; 
+    color: aliceblue;
     border-radius: 15px;
+    width: 100px;
+    height: 36px;
+    margin-top: 10px;
+
+}
+
+.input_signup {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+
+.label_signup {
+    display: flex;
+    flex-direction: column;
+}
+.margin_input_signup {
+    margin-top: 5px;
+}
+
+.form_signUp {
+    font-family: 'Grandstander', cursive;
+    font-size: 25px;
+    border: 1px solid #1c093e;
+    /*background: linear-gradient(to top, #6e6ab0, #3c3966);*/
+    padding: 3%;
+    color: #1c093e;
+    display: flex ;
+    width: 30%;
+    height: 35%;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+
+
+}
+
+.form_signUp_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/minimalizm-gradient-fon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.ok {
+    display: flex;
+    justify-content: center;
+}
+
+.text_signUp {
+    font-size: 14px;
+    padding-top: 16px;
+    justify-content: center;
+    display: flex;
+
+}
+.text_color {
+    color: #000000;
+    font-weight: bold;
+}
+.signUp {
+    display: flex ;
+}
+
+/* Кнопка signIn */
+
+
+.form_signIn_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.picture_signIn {
+    background-image: url("../img/gradient.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+/*.button_signIn {*/
+/*    background-color: #3c3966;*/
+/*    border: none;*/
+/*    color: aliceblue;*/
+/*    border-radius: 15px;*/
+/*    width: 200px;*/
+/*    height: 36px;*/
+/*    margin-top: 10px;*/
+/*    justify-content: center;*/
+/*}*/
+
+.form_signIn {
+    font-family: 'Grandstander', cursive;
+    font-size: 25px;
+    border: 1px solid #1c093e;
+    padding: 3%;
+    color: #1c093e;
+    width: 30%;
+    height: 28%;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex ;
+
+}
+
+
+.label_signin {
+    display: flex;
+    flex-direction: column;
+}
+
+.margin_input_signin {
+    margin-top: 5px;
+}
+
+.input_signin {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+.ok_In {
+    display: flex;
+    justify-content: center;
+}
+
+
+.okbuttomIn {
+    font-size: 20px;
+    background-color: #3c3966;
+    border: none;
+    color: aliceblue;
+    border-radius: 15px;
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+
+}
+.signIn {
+    display: flex ;
 }

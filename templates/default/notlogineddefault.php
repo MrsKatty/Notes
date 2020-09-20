@@ -13,10 +13,15 @@
             <div class="login">Sign up</div>
         </a>
 
-
     </div>
     <!--Контейнер картинки -->
     <div class="into_img"> </div>
 
+
+    <div class="audio">
+     <audio controls >
+        <source  src="../music/audio/Detskiy_son_oum_ru.mp3">
+    </audio>
+</div>
 
 </div>

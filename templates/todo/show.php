@@ -24,6 +24,8 @@ echo Html::create("Pagination")
     ->setControllerType($type)
     ->setPageCount($pageCount)
     ->html();
+    $data= date('Y-m-d H:i:s');
+
 ?>
 
 <a class="btn btn-primary" id="addButton">Добавить заявку</a>
@@ -44,7 +46,7 @@ echo Html::create("Pagination")
         <?= (new Select())->setName('users_id')->setId('users_id')->setData($usersList)->html() ?>
     </label>
     <label> <?= $comments['dateStart'] ?>
-        <input type="datetime-local" name="dateStart" id="dateStart">
+        <input type="datetime-local" name="dateStart" id="dateStart" value= '<?= $date ?>'>
     </label>
     <label> <?= $comments['dateEnd'] ?>
         <input type="datetime-local" name="dateEnd" id="dateEnd">

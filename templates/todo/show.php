@@ -24,7 +24,7 @@ echo Html::create("Pagination")
     ->setControllerType($type)
     ->setPageCount($pageCount)
     ->html();
-    $data= date('Y-m-d H:i:s');
+    
 
 ?>
 
@@ -37,19 +37,19 @@ echo Html::create("Pagination")
         <textarea name="content" id="content" cols="30" rows="10"></textarea>
     </label>
     <label> <?= $comments['priority'] ?>
-        <?= (new Select())->setName('priority')->setId('priority')->setData(["0" => "Главная", "1" => "Второстепенная"])->html() ?>
+        <?= (new Select())->setName('priority')->setId('priority')->setData(["Главная" => "Главная", "Второстепенная" => "Второстепенная"])->html() ?>
     </label>
     <label> <?= $comments['status'] ?>
-        <?= (new Select())->setName('status')->setId('status')->setData(["0" => "Выполняющиеся", "1" => "Завершенная"])->html() ?>
+        <?= (new Select())->setName('status')->setId('status')->setData(["Выполняющиеся" => "Выполняющиеся", "Завершенная" => "Завершенная"])->html() ?>
     </label>
     <label> <?= $comments['users_id'] ?>
         <?= (new Select())->setName('users_id')->setId('users_id')->setData($usersList)->html() ?>
     </label>
     <label> <?= $comments['dateStart'] ?>
-        <input type="datetime-local" name="dateStart" id="dateStart" value= '<?= $date ?>'>
+        <input type="datetime-local" name="dateStart" id="dateStart" value= '<?= date("Y-m-d\TH:i:s") ?>'>
     </label>
     <label> <?= $comments['dateEnd'] ?>
-        <input type="datetime-local" name="dateEnd" id="dateEnd">
+        <input type="datetime-local" name="dateEnd" id="dateEnd"  value= '<?= date("Y-m-d\TH:i:s", time()+7*24*60*60) ?>'>
     </label>
     <input type="submit" value="Отправить">
     <a class="btn btn-primary" id="closeFormButton">Закрыть</a>

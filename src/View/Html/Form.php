@@ -43,6 +43,7 @@ class Form extends AbstractTag
             "' method='" .
             $this->method .
             "'" . $this->class .
+            $this->id .
             $this->style . ">\n" .
             $this->content .
             "</form>";

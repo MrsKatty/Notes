@@ -161,6 +161,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .margin_input_signup {
     margin-top: 5px;
 }
@@ -172,7 +173,7 @@
     /*background: linear-gradient(to top, #6e6ab0, #3c3966);*/
     padding: 3%;
     color: #1c093e;
-    display: flex ;
+    display: flex;
     width: 30%;
     height: 35%;
     flex-direction: column;
@@ -206,12 +207,14 @@
     display: flex;
 
 }
+
 .text_color {
     color: #000000;
     font-weight: bold;
 }
+
 .signUp {
-    display: flex ;
+    display: flex;
 }
 
 /* Кнопка signIn */
@@ -228,6 +231,7 @@
     background-size: cover;
 
 }
+
 .picture_signIn {
     background-image: url("../img/gradient.jpg");
     background-repeat: no-repeat;
@@ -257,7 +261,7 @@
     height: 28%;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.1);
-    display: flex ;
+    display: flex;
 
 }
 
@@ -278,6 +282,7 @@
     margin-left: 10px;
 
 }
+
 .ok_In {
     display: flex;
     justify-content: center;
@@ -295,15 +300,47 @@
     margin-top: 10px;
 
 }
+
 .signIn {
-    display: flex ;
+    display: flex;
 }
 
-.audio {
-
-}
+.audio {}
 
 .back a {
 
     color: #1c093e;
+}
+
+#editForm select {
+    display: block;
+}
+
+.main_form {
+
+    background-image: url("../img/minimalizm-gradient-fon.svg");
+}
+
+.startPage {
+    font-family: 'Grandstander', cursive;
+    font-size: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.startText { 
+    font-size: 40px;
+}
+
+.startText_todo{
+    font-size: 30px;
+    font-family: 'Grandstander', cursive;
+}
+.startText_dop {
+    font-size: 25px;
+    font-family:'Roboto', sans-serif; 
+    justify-content: left;
 }

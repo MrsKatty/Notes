@@ -1,5 +1,6 @@
 <?php
 
+use Psalm\Internal\Type\ParseTree\Value;
 use View\Html\Html;
 use TexLab\Html\Select;
 
@@ -12,7 +13,8 @@ use TexLab\Html\Select;
 $form = Html::create('Form')
     ->setMethod('POST')
     ->setAction("?action=edit&type=$type")
-    ->setClass('form');
+    ->setClass('form')
+    ->setId("editForm");
 
 foreach ($fields as $name => $value) {
     $form->addContent(Html::create('Label')->setFor($name)->setInnerText($comments[$name])->html());
@@ -20,10 +22,20 @@ foreach ($fields as $name => $value) {
         $form->addContent((new Select())
             ->setName($name)
             ->setId($name)
+            ->setSelectedValue($value)
             ->setData([
-                //     'do' => 'здесь',
-                //     'todo' => 'придумай'
-                // 'notodo' => 'сама'
+                "Выполняющиеся" => "Выполняющиеся",
+                "Завершенная" => "Завершенная"
+            ])
+            ->html());
+    } elseif ($name == 'priority') {
+        $form->addContent((new Select())
+            ->setName($name)
+            ->setId($name)
+            ->setSelectedValue($value)
+            ->setData([
+                "Главная" => "Главная",
+                "Второстепенная" => "Второстепенная"
             ])
             ->html());
     } else {
@@ -33,7 +45,3 @@ foreach ($fields as $name => $value) {
 echo $form->addContent(Html::create('Input')->setType('hidden')->setName('id')->setValue($id)->html())
     ->addContent(Html::create('Input')->setType('submit')->setValue('OK')->html())
     ->html();
-
-
-
-

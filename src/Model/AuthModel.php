@@ -16,5 +16,8 @@ class AuthModel extends DbEntity
             ->addWhere("BINARY `users`.`login`= '$login'")
             ->addWhere("BINARY `users`.`password`= '$password'")
             ->get()[0];
-    }
+    } 
+   
 }
+
+// SELECT COUNT(*) FROM `users` WHERE login = 'Kate'

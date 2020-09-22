@@ -17,7 +17,7 @@
 
         <div> Wellcome! </div>
         <div class="startText"> Here are some tips to get you started </div>
-        <div class="startText_todo"> <img src="../icons/baseline_panorama_fish_eye_black_18dp.png"> To do -
+        <div class="startText_todo"> <img src="../icons/baseline_panorama_fish_eye_black_18dp.png"> Notes -
             <span class="startText_dop"> Here you can plan your affairs, structure them </span> </div>
 
 
@@ -33,6 +33,9 @@
 
 
     </div>
+    <div> 
+        <img src="../public/gif/orig-3-7.gif">
+</div>
 
 
 

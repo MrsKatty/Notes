@@ -9,28 +9,28 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item<?= $controllerType == '' ? ' active' : '' ?>">
-                <a class="nav-link" href="/">Домой <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item<?= $controllerType == 'todo' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=show&type=todo">Заметки</a>
+                <a class="nav-link" href="?action=show&type=todo">Notes</a>
             </li>
             <li class="nav-item<?= $controllerType == 'group' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=show&type=group">Группы пользователей</a>
+                <a class="nav-link" href="?action=show&type=group">Users group</a>
             </li>
             <li class="nav-item<?= $controllerType == 'users' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=show&type=users">Пользователи</a>
+                <a class="nav-link" href="?action=show&type=users">Users</a>
             </li>
             <!--<li class="nav-item<?= $controllerType == 'auth' ? ' active' : '' ?>">
                 <a class="nav-link" href="?action=loginform&type=auth">Login</a>
             </li>-->
             <li class="nav-item<?= $controllerType == 'auth' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=logout&type=auth">Выход</a>
+                <a class="nav-link" href="?action=logout&type=auth">Exit </a>
             </li>
             <!--<li class="nav-item<?= $controllerType == 'add' ? ' active' : '' ?>">
                 <a class="nav-link" href="?action=show&type=signup">Регистрация</a>
             </li>-->
             <span class="navbar-text">
-                    <?= !empty($_SESSION['user']) ? $_SESSION['user']['FIO'] . '(' . $_SESSION['user']['name'] . ')' : '' ?>
+                    <?= !empty($_SESSION['user']) ? $_SESSION['user']['FIO']  : '' ?>
                 </span>
     </div>
 </nav>

@@ -31,7 +31,7 @@ class SignUpController extends UsersController
                 $this->table->add($data['post']);
                 $this->redirect('?action=loginform&type=auth');
             } else {
-                $_SESSION['errors'][] = "Такой логин существует";
+                $_SESSION['errors'][] = "This login or password exists already  ";
                 $this->redirect('?action=show&type=signup');
             }
         } else {

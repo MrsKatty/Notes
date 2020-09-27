@@ -28,7 +28,7 @@ echo Html::create("Pagination")
 
 ?>
 
-<a class="btn btn-primary" id="addButton">Добавить заявку</a>
+<a class="btn btn-primary" id="addButton">Add task</a>
 <form action="?action=add&type=<?= $type ?>" id="addForm" class="hidden" method="post" class="guestbookform">
     <label> <?= $comments['project'] ?>
         <input type="text" name="project" id="project">
@@ -51,7 +51,7 @@ echo Html::create("Pagination")
     <label> <?= $comments['dateEnd'] ?>
         <input type="datetime-local" name="dateEnd" id="dateEnd"  value= '<?= date("Y-m-d\TH:i:s", time()+7*24*60*60) ?>'>
     </label>
-    <input type="submit" value="Отправить">
-    <a class="btn btn-primary" id="closeFormButton">Закрыть</a>
+    <input type="submit" value="Send">
+    <a class="btn btn-primary" id="closeFormButton">Close</a>
 </form>
 <div id="shadow" class="hidden"></div>

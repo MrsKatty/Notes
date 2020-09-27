@@ -2,7 +2,9 @@
 
 ?>
 <div class="form_signUp_container">
+
 <form action="?type=signup&action=add" method="post" class="form_signUp">
+
     <div class="signUp">
 
 
@@ -24,9 +26,20 @@
 
 
     </div>
+
+    <?php
+    if (!empty($_SESSION['errors'])) {
+        foreach ($_SESSION['errors'] as $error) {
+            echo '<div class="reg_error" role="alert">' . $error . '</div>';
+        }
+        unset($_SESSION['errors']);
+    }
+    ?>
+
     <div class="ok">
         <input type="submit" value="ok" class="okbuttom">
     </div>
+
 
 
     <div class="text_signUp">
@@ -35,6 +48,10 @@
             <span class="text_color"> the Terms of Service</span> and
             <span class="text_color"> Privacy Policy </span> </p>
     </div>
+
+
+
+
 
 </form>
 </div>

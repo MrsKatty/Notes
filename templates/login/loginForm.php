@@ -23,6 +23,17 @@
 
 
             </div>
+
+            <?php
+            if (!empty($_SESSION['errors'])) {
+                foreach ($_SESSION['errors'] as $error) {
+                    echo '<div class="reg_error" role="alert">' . $error . '</div>';
+                }
+                unset($_SESSION['errors']);
+            }
+            ?>
+
+
             <div class="ok_In">
                 <input type="submit" value="Log in" class="okbuttomIn">
             </div>

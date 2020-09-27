@@ -33,8 +33,10 @@
 
 
     </div>
-    <div> 
-        <img src="../public/gif/orig-3-7.gif">
+    <div class="gif">
+        <img src="../public/gif/ezgif.com-gif-to-webp.gif">
+    </div>
+
 </div>
 
 

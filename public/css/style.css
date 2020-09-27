@@ -175,7 +175,7 @@
     color: #1c093e;
     display: flex;
     width: 30%;
-    height: 35%;
+    height: 37%;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.1);
 
@@ -258,7 +258,7 @@
     padding: 3%;
     color: #1c093e;
     width: 30%;
-    height: 28%;
+    height: 29%;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.1);
     display: flex;
@@ -318,7 +318,7 @@
 
 .main_form {
 
-    background-image: url("../img/minimalizm-gradient-fon.svg");
+    /*background-image: url("../img/minimalizm-gradient-fon.svg");*/
 }
 
 .startPage {
@@ -343,4 +343,16 @@
     font-size: 25px;
     font-family:'Roboto', sans-serif; 
     justify-content: left;
+}
+.gif{
+    display: flex;
+    justify-content: center;
+    /*width: 70px;*/
+    /*right: 50px;*/
+}
+
+.reg_error {
+    color: #e53030;
+    font-size: 15px;
+    font-family: "Tahoma";
 }

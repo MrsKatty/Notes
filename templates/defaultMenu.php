@@ -13,7 +13,7 @@
                     <a class="nav-link" href="?action=loginform&type=auth">Login</a>
                 </li>
                 <li class="nav-item<?= $controllerType == 'add' ? ' active' : '' ?>">
-                    <a class="nav-link" href="?action=show&type=signup">Регистрация</a>
+                    <a class="nav-link" href="?action=show&type=signup">Registration</a>
                 </li>
                 <span class="navbar-text">
                     <?= !empty($_SESSION['user']) ? $_SESSION['user']['FIO'] . '(' . $_SESSION['user']['name'] . ')' : '' ?>

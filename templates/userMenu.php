@@ -10,10 +10,10 @@
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item<?= $controllerType == 'usertodo' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=show&type=usertodo">Заметки</a>
+                <a class="nav-link" href="?action=show&type=usertodo">Notes</a>
             </li>
             <li class="nav-item<?= $controllerType == 'auth' ? ' active' : '' ?>">
-                <a class="nav-link" href="?action=logout&type=auth">Выход</a>
+                <a class="nav-link" href="?action=logout&type=auth">Exit </a>
             </li>
 <!--            <li class="nav-item--><?//= $controllerType == 'auth' ? ' active' : '' ?><!--">-->
 <!--                <a class="nav-link" href="?action=loginform&type=auth">Login</a>-->

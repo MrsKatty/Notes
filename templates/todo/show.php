@@ -10,25 +10,66 @@ use View\Html\Html;
  * @var array $usersList список пользователей
  * @var array $table
  */
+?>
 
 
-echo Html::create('TableEdited')
-    ->setControllerType($type)
-    ->setHeaders($comments)
-    ->data($table)
-    ->setClass('table')
-    ->html();
+<div class="news">
+    <div class="container" id="news_container">
+        <div class="container_header">
+            <div class="header_button">
+                <h2 class="header3"> Actual Applications</h2>
+                <div class="button_add_news_container">
+                    <a class="btn btn-primary" id="addButton">Add task</a>
+                </div>
+            </div>
+        </div>
+        <?php
+        echo Html::create('TodoTags')
+            ->setControllerType($type)
+            ->data($table)
+            ->html();
+        ?>
+        <div class="pagination_container">
+            <?php
+//            if ($pageCount > 1) {
+//                $pagination = TexLab\Html\Html::pagination();
+//                echo $pagination
+//                    ->setClass("pagination")
+//                    ->setUrlPrefix("?type=$type&action=show")
+//                    ->setPrevious('Previous')
+//                    ->setNext('Next')
+//                    ->setPageCount($pageCount)
+//                    ->setCurrentPage($currentPage)
+//                    ->html();
+//            }
 
-echo Html::create("Pagination")
-    ->setClass('pagination')
-    ->setControllerType($type)
-    ->setPageCount($pageCount)
-    ->html();
-    
+            echo Html::create("Pagination")
+                ->setClass('pagination')
+                ->setControllerType($type)
+                ->setPageCount($pageCount)
+                ->html();
+
+
+
+            ?>
+        </div>
+    </div>
+</div>
+
+<?php
+
+
+
+//echo Html::create("Pagination")
+//    ->setClass('pagination')
+//    ->setControllerType($type)
+//    ->setPageCount($pageCount)
+//    ->html();
+//
 
 ?>
 
-<a class="btn btn-primary" id="addButton">Add task</a>
+
 <form action="?action=add&type=<?= $type ?>" id="addForm" class="hidden" method="post" class="guestbookform">
     <label> <?= $comments['project'] ?>
         <input type="text" name="project" id="project">

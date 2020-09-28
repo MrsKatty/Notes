@@ -24,8 +24,8 @@ foreach ($fields as $name => $value) {
             ->setId($name)
             ->setSelectedValue($value)
             ->setData([
-                "Выполняющиеся" => "Выполняющиеся",
-                "Завершенная" => "Завершенная"
+                "Performed" => "Performed",
+                "Completed" => "Completed"
             ])
             ->html());
     } elseif ($name == 'priority') {
@@ -34,8 +34,8 @@ foreach ($fields as $name => $value) {
             ->setId($name)
             ->setSelectedValue($value)
             ->setData([
-                "Главная" => "Главная",
-                "Второстепенная" => "Второстепенная"
+                "Main" => "Main",
+                "Secondary" => "Secondary"
             ])
             ->html());
     } else {

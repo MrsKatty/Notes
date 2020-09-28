@@ -17,9 +17,9 @@ use View\Html\Html;
     <div class="container" id="news_container">
         <div class="container_header">
             <div class="header_button">
-                <h2 class="header3"> Actual Applications</h2>
+<!--                <h2 class="header3"> Actual Applications</h2>-->
                 <div class="button_add_news_container">
-                    <a class="btn btn-primary" id="addButton">Add task</a>
+                    <a  id="addButton">Add task</a>
                 </div>
             </div>
         </div>
@@ -58,15 +58,6 @@ use View\Html\Html;
 
 <?php
 
-
-
-//echo Html::create("Pagination")
-//    ->setClass('pagination')
-//    ->setControllerType($type)
-//    ->setPageCount($pageCount)
-//    ->html();
-//
-
 ?>
 
 
@@ -78,10 +69,10 @@ use View\Html\Html;
         <textarea name="content" id="content" cols="30" rows="10"></textarea>
     </label>
     <label> <?= $comments['priority'] ?>
-        <?= (new Select())->setName('priority')->setId('priority')->setData(["Главная" => "Главная", "Второстепенная" => "Второстепенная"])->html() ?>
+        <?= (new Select())->setName('priority')->setId('priority')->setData(["Main" => "Main", "Secondary" => "Secondary"])->html() ?>
     </label>
     <label> <?= $comments['status'] ?>
-        <?= (new Select())->setName('status')->setId('status')->setData(["Выполняющиеся" => "Выполняющиеся", "Завершенная" => "Завершенная"])->html() ?>
+        <?= (new Select())->setName('status')->setId('status')->setData(["Performed" => "Performed", "Completed" => "Completed"])->html() ?>
     </label>
     <label> <?= $comments['users_id'] ?>
         <?= (new Select())->setName('users_id')->setId('users_id')->setData($usersList)->html() ?>

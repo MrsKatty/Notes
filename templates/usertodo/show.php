@@ -18,9 +18,9 @@ use View\Html\Html;
     <div class="container" id="news_container">
         <div class="container_header">
             <div class="header_button">
-                <h2 class="header3"> Actual Applications</h2>
+<!--                <h2 class="header3"> Actual Applications</h2>-->
                 <div class="button_add_news_container">
-                    <a class="btn btn-primary" id="addButton">Add task</a>
+                    <a " id="addButton">Add task</a>
                 </div>
             </div>
         </div>
@@ -67,10 +67,10 @@ use View\Html\Html;
         <textarea name="content" id="content" cols="30" rows="10"></textarea>
     </label>
     <label> <?= $comments['priority'] ?>
-        <?= (new Select())->setName('priority')->setId('priority')->setData(["0" => "Главная", "1" => "Второстепенная"])->html() ?>
+        <?= (new Select())->setName('priority')->setId('priority')->setData(["Main" => "Main", "Secondary" => "Secondary"])->html() ?>
     </label>
     <label> <?= $comments['status'] ?>
-        <?= (new Select())->setName('status')->setId('status')->setData(["0" => "Выполняющиеся", "1" => "Завершенная"])->html() ?>
+        <?= (new Select())->setName('status')->setId('status')->setData(["Performed" => "Performed", "Completed" => "Completed"])->html() ?>
     </label>
     <label> <?= $comments['users_id'] ?>
         <input type="hidden" name="users_id" value="<?= $user_id ?>">
@@ -81,7 +81,7 @@ use View\Html\Html;
     <label> <?= $comments['dateEnd'] ?>
         <input type="datetime-local" name="dateEnd" id="dateEnd">
     </label>
-    <input type="submit" value="Отправить">
-    <a class="btn btn-primary" id="closeFormButton">Закрыть</a>
+    <input type="submit" value="Send">
+    <a class="btn btn-primary" id="closeFormButton">Close</a>
 </form>
 <div id="shadow" class="hidden"></div> 

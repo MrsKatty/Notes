@@ -21,8 +21,8 @@ foreach ($fields as $name => $value) {
             ->setName($name)
             ->setId($name)
             ->setData([
-                0 => 'Выполняющиеся',
-                1 => 'Завершенная',
+                'Performed' => 'Performed',
+                'Completed' => 'Completed',
 
             ])
             ->html());
@@ -31,8 +31,8 @@ foreach ($fields as $name => $value) {
             ->setName($name)
             ->setId($name)
             ->setData([
-                0 => 'Главная',
-                1 => 'Второстепенная',
+                'Main' => 'Main',
+                'Secondary' => 'Secondary',
 
             ])
             ->html());

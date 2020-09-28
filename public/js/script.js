@@ -1,7 +1,7 @@
 let fun = function () {
 
     let addButton = document.getElementById("addButton");
-    addButton.innerText = addButton.innerText === "Убрать" ? "Добавить заявку" : "Убрать"
+    addButton.innerText = addButton.innerText === "Close" ? "Add task" : "Close"
 
     document.getElementById("addForm").classList.toggle("hidden")
     document.getElementById("shadow").class.toggle("hidden")

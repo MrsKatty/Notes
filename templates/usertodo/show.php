@@ -18,9 +18,8 @@ use View\Html\Html;
     <div class="container" id="news_container">
         <div class="container_header">
             <div class="header_button">
-<!--                <h2 class="header3"> Actual Applications</h2>-->
                 <div class="button_add_news_container">
-                    <a " id="addButton">Add task</a>
+                    <a id="addButton">Add task</a>
                 </div>
             </div>
         </div>
@@ -57,8 +56,6 @@ use View\Html\Html;
     </div>
 </div>
 
-
-
 <form action="?action=add&type=<?= $type ?>" id="addForm" class="hidden" method="post" class="guestbookform">
     <label> <?= $comments['project'] ?>
         <input type="text" name="project" id="project">
@@ -73,15 +70,66 @@ use View\Html\Html;
         <?= (new Select())->setName('status')->setId('status')->setData(["Performed" => "Performed", "Completed" => "Completed"])->html() ?>
     </label>
     <label> <?= $comments['users_id'] ?>
-        <input type="hidden" name="users_id" value="<?= $user_id ?>">
+        <?= (new Select())->setName('users_id')->setId('users_id')->setData($usersList)->html() ?>
     </label>
     <label> <?= $comments['dateStart'] ?>
-        <input type="datetime-local" name="dateStart" id="dateStart">
+        <input type="datetime-local" name="dateStart" id="dateStart" value= '<?= date("Y-m-d\TH:i:s") ?>'>
     </label>
     <label> <?= $comments['dateEnd'] ?>
-        <input type="datetime-local" name="dateEnd" id="dateEnd">
+        <input type="datetime-local" name="dateEnd" id="dateEnd"  value= '<?= date("Y-m-d\TH:i:s", time()+7*24*60*60) ?>'>
     </label>
     <input type="submit" value="Send">
     <a class="btn btn-primary" id="closeFormButton">Close</a>
 </form>
-<div id="shadow" class="hidden"></div> 
+
+<div id="shadow" class="hidden"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div id="shadow" class="hidden"></div>-->
+<!--<form action="?action=add&type=--><?//= $type ?><!--" id="addForm" class="hidden" method="post" class="guestbookform">-->
+<!--    <label> --><?//= $comments['project'] ?>
+<!--        <input type="text" name="project"  id="project">-->
+<!--    </label>-->
+<!--    <label> --><?//= $comments['content'] ?>
+<!--        <textarea name="content" id="content" cols="30" rows="10"></textarea>-->
+<!--    </label>-->
+<!--    <label> --><?//= $comments['priority'] ?>
+<!--         --><?//= (new Select())->setName('priority')->setId('priority')->setData(["Main" => "Main", "Secondary" => "Secondary"])->html() ?>
+<!--    </label>-->
+<!--    <label> --><?//= $comments['status'] ?>
+<!--        --><?//= (new Select())->setName('status')->setId('status')->setData(["Performed" => "Performed", "Completed" => "Completed"])->html() ?>
+<!--    </label>-->
+<!--    <label> --><?//= $comments['users_id'] ?>
+<!--        <input type="hidden" name="users_id" value="--><?//= $user_id ?><!--">-->
+<!--    </label>-->
+<!--    <label> --><?//= $comments['dateStart'] ?>
+<!--        <input type="datetime-local" name="dateStart" id="dateStart">-->
+<!--    </label>-->
+<!--    <label> --><?//= $comments['dateEnd'] ?>
+<!--        <input type="datetime-local" name="dateEnd" id="dateEnd">-->
+<!--    </label>-->
+<!--    <input type="submit" value="Send" class="send">-->
+<!--    <a href='?action=show&type=usertodo' class="close"> Close</a>-->
+<!--</form>-->
+<!--<div id="shadow" class="hidden"></div>-->
+

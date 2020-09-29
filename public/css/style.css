@@ -38,6 +38,7 @@
 
 .hidden {
     display: none;
+    /*background: #6e6ab0;*/
 }
 
 #addForm label {
@@ -49,9 +50,17 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid rgb(52, 97, 246);
-    background-color: rgb(199, 107, 145);
+    border: 1px solid #1c093e;
+    border-radius: 15px;
+    background-image: url("../img/minimalizm-gradient-fon.svg");
+    color: azure;
     z-index: 2;
+    font-family: 'Grandstander', cursive;
+    font-size: 18px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*flex-direction: column;*/
+
 }
 
 #shadow {
@@ -500,4 +509,54 @@
 
 .pagination a {
     color: #c6bbf1;
+}
+#project {
+    color:  #3c3966;
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 10px;
+  margin-top: 10px;
+    width: 70%;
+    font-family: Tahoma;
+}
+#content {
+    color:  #3c3966;
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    font-family: Tahoma;
+}
+
+
+.close a {
+    font-size: 20px;
+    background-color: #3c3966;
+    color: aliceblue;
+    border-radius: 15px;
+    width: 120px;
+    height: 40px;
+    margin-top: 30px;
+    padding-top: 4px;
+    text-align: center;
+
+
+}
+.send {
+    font-size: 18px;
+    background-color: #3c3966;
+    color: aliceblue;
+    border-radius: 15px;
+    width: 120px;
+    height: 40px;
+    padding-top: 4px;
+    text-align: center;
+    border: none;
+   margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+
+.priority {
+    background: #e53030;
 }

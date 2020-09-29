@@ -83,7 +83,9 @@ use View\Html\Html;
     <label> <?= $comments['dateEnd'] ?>
         <input type="datetime-local" name="dateEnd" id="dateEnd"  value= '<?= date("Y-m-d\TH:i:s", time()+7*24*60*60) ?>'>
     </label>
+
     <input type="submit" value="Send">
     <a class="btn btn-primary" id="closeFormButton">Close</a>
 </form>
 <div id="shadow" class="hidden"></div>
+

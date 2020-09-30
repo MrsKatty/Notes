@@ -9,12 +9,25 @@ use TexLab\Html\Select;
  * @var array $fields
  * @var array $comments
  */
+?>
 
+<div class="main_form">
+    <div class="picture_signIn">
+
+
+
+
+<div class="form_signIn_container">
+
+
+<?php
 $form = Html::create('Form')
     ->setMethod('POST')
     ->setAction("?action=edit&type=$type")
     ->setClass('form')
     ->setId("editForm");
+
+
 
 foreach ($fields as $name => $value) {
     $form->addContent(Html::create('Label')->setFor($name)->setInnerText($comments[$name])->html());
@@ -28,6 +41,7 @@ foreach ($fields as $name => $value) {
                 "Completed" => "Completed"
             ])
             ->html());
+
     } elseif ($name == 'priority') {
         $form->addContent((new Select())
             ->setName($name)
@@ -39,9 +53,11 @@ foreach ($fields as $name => $value) {
             ])
             ->html());
     } else {
-        $form->addContent(Html::create('input')->setName($name)->setId($name)->setValue($value)->html());
+        $form->addContent(Html::create('input')->setName($name)->setValue($value)->html());
     }
 }
 echo $form->addContent(Html::create('Input')->setType('hidden')->setName('id')->setValue($id)->html())
     ->addContent(Html::create('Input')->setType('submit')->setValue('OK')->html())
     ->html();
+?>
+</div></div></div>

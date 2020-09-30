@@ -8,7 +8,17 @@ use TexLab\Html\Select;
  * @var array $fields
  * @var array $comments
  */
+?>
 
+<div class="main_form">
+    <div class="picture_signIn">
+
+
+
+
+<div class="form_signIn_container">
+
+<?php
 $form = Html::create('Form')
     ->setMethod('POST')
     ->setAction("?action=edit&type=$type")
@@ -46,3 +56,5 @@ foreach ($fields as $name => $value) {
 echo $form->addContent(Html::create('Input')->setType('hidden')->setName('id')->setValue($id)->html())
     ->addContent(Html::create('Input')->setType('submit')->setValue('OK')->html())
     ->html();
+?>
+</div></div></div>

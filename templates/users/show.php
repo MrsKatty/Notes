@@ -10,7 +10,6 @@ use View\Html\Html;
 // print_r($groupNames);
 
 
-
 echo Html::create("Pagination")
     ->setClass('pagination')
     ->setControllerType($type)

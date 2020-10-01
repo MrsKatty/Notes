@@ -66,7 +66,7 @@ use View\Html\Html;
         <input type="text" name="project" id="project">
     </label>
     <label> <?= $comments['content'] ?>
-        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        <textarea name="content" id="content" cols="30" rows="5"></textarea>
     </label>
     <label> <?= $comments['priority'] ?>
         <?= (new Select())->setName('priority')->setId('priority')->setData(["Main" => "Main", "Secondary" => "Secondary"])->html() ?>

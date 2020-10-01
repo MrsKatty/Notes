@@ -7,7 +7,7 @@
 
 }
 nav {
-    
+
     font-family:'Grandstander' ;
     font-size: 20px;
     font-weight: bold;
@@ -110,9 +110,27 @@ nav {
     z-index: 2;
     font-family: 'Grandstander', cursive;
     font-size: 18px;
-    padding: 1rem;
-
+    padding: 2.5rem;
 }
+
+#addForm label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#addForm label input,
+#addForm label textarea,
+#addForm label select {
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+
+#addForm label select {
+    height: 2rem;
+}
+
 
 #shadow {
     position: fixed;

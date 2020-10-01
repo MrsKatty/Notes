@@ -9,13 +9,18 @@ use View\Html\Html;
  */
 // print_r($groupNames);
 
+?>
 
-echo Html::create("Pagination")
-    ->setClass('pagination')
-    ->setControllerType($type)
-    ->setPageCount($pageCount)
-    ->html();
 
+<div class="main_form">
+    <div class="picture_user picture_signIn ">
+
+        <div class="table_users_container ">
+
+
+
+
+<?php
 echo Html::create('TableEdited')
     ->setControllerType($type)
     ->setHeaders($comments)
@@ -23,11 +28,16 @@ echo Html::create('TableEdited')
     ->setClass('table')
     ->html();
 
+echo Html::create("Pagination")
+    ->setClass('pagination')
+    ->setControllerType($type)
+    ->setPageCount($pageCount)
+    ->html();
 
 $form = Html::create('Form')
     ->setMethod('POST')
     ->setAction("?action=add&type=$type")
-    ->setClass('form');
+    ->setClass('form form_add_user');
 
 foreach ($fields as $field) {
     $form->addContent(Html::create('Label')->setFor($field)->setInnerText($comments[$field])->html());
@@ -49,3 +59,5 @@ $form->addContent(
 );
 
 echo $form->html();
+?>
+        </div></div></div>

@@ -10,7 +10,7 @@ use View\Html\Html;
 ?>
 
 <div class="main_form">
-    <div class="picture_signIn">
+    <div class="picture_signIn ">
 
 
 

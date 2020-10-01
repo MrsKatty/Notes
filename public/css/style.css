@@ -1,9 +1,24 @@
 .table td {
-    border: 2px solid black;
-}
+    border: 0.4px solid black;
 
+}
+.table tbody tr{
+    background: #3c3966;
+
+}
+nav {
+    
+    font-family:'Grandstander' ;
+    font-size: 20px;
+    font-weight: bold;
+
+}
 .table {
     border-collapse: collapse;
+    border: none;
+    width: 100%;
+    margin: 0;
+
 }
 
 
@@ -46,7 +61,7 @@
     margin-left: 10px;
 }
 
-.form label:first-child{
+.form label:first-child {
     margin-top: -15px;
 }
 
@@ -95,9 +110,7 @@
     z-index: 2;
     font-family: 'Grandstander', cursive;
     font-size: 18px;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*flex-direction: column;*/
+    padding: 1rem;
 
 }
 
@@ -273,7 +286,21 @@
     background-position: center;
     background-size: cover;
 
+
 }
+
+.table_users_container {
+    /*width: 100vw;*/
+    height: 100vh;
+
+}
+
+.form_add_user {
+    width: 390px;
+
+}
+
+
 
 .picture_signIn {
     background-image: url("../img/gradient.jpg");
@@ -281,6 +308,11 @@
     background-position: center;
     background-size: cover;
 
+}
+
+.picture_user {
+    background-image: url("../img/Gradient_builder_2.jpg");
+    padding: 3rem;
 }
 
 .form_signIn {
@@ -337,11 +369,7 @@
     display: flex;
 }
 
-.audio {
-}
-
 .back a {
-
     color: #1c093e;
 }
 
@@ -350,7 +378,6 @@
 }
 
 .main_form {
-
     /*background-image: url("../img/minimalizm-gradient-fon.svg");*/
 }
 
@@ -420,8 +447,6 @@
     grid-gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin: 0;
-
-
 }
 
 .news_caption {
@@ -432,20 +457,16 @@
     text-align: center;
 }
 
-
 .news_text {
     margin-top: 1rem;
     text-align: center;
     font-size: 28px;
     font-weight: bold;
     font-family: 'Grandstander', cursive;
-
 }
-
 .news_text_date {
     margin-top: 1rem;
     text-align: center;
-
 }
 
 .container_date_status {
@@ -465,7 +486,6 @@
     font-weight: bold;
     font-size: 17px;
     margin-top: 1rem;
-
 }
 
 .news_item {
@@ -479,7 +499,6 @@
     border: none;
     justify-content: center;
     display: flex;
-
 }
 
 .container_del {

@@ -16,7 +16,6 @@ class TodoModel extends DbEntity
             ->setFrom('`users`,`todo`')
             ->setWhere('`users`.`id` = `todo`.`users_id`')
             ->setOrderBy('`todo`.`id` DESC')
-//            ->setLimit(2)
             ->getPage($page);
     }
 

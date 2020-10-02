@@ -17,9 +17,8 @@ use View\Html\Html;
     <div class="container" id="news_container">
         <div class="container_header">
             <div class="header_button">
-<!--                <h2 class="header3"> Actual Applications</h2>-->
                 <div class="button_add_news_container">
-                    <a  id="addButton">Add task</a>
+                    <a id="addButton">Add task</a>
                 </div>
             </div>
         </div>
@@ -31,18 +30,7 @@ use View\Html\Html;
         ?>
         <div class="pagination_container">
             <?php
-//            if ($pageCount > 1) {
-//                $pagination = TexLab\Html\Html::pagination();
-//                echo $pagination
-//                    ->setClass("pagination")
-//                    ->setUrlPrefix("?type=$type&action=show")
-//                    ->setPrevious('Previous')
-//                    ->setNext('Next')
-//                    ->setPageCount($pageCount)
-//                    ->setCurrentPage($currentPage)
-//                    ->html();
-//            }
-
+            //         
             echo Html::create("Pagination")
                 ->setClass('pagination')
                 ->setControllerType($type)
@@ -78,14 +66,13 @@ use View\Html\Html;
         <?= (new Select())->setName('users_id')->setId('users_id')->setData($usersList)->html() ?>
     </label>
     <label> <?= $comments['dateStart'] ?>
-        <input type="datetime-local" name="dateStart" id="dateStart" value= '<?= date("Y-m-d\TH:i:s") ?>'>
+        <input type="datetime-local" name="dateStart" id="dateStart" value='<?= date("Y-m-d\TH:i:s") ?>'>
     </label>
     <label> <?= $comments['dateEnd'] ?>
-        <input type="datetime-local" name="dateEnd" id="dateEnd"  value= '<?= date("Y-m-d\TH:i:s", time()+7*24*60*60) ?>'>
+        <input type="datetime-local" name="dateEnd" id="dateEnd" value='<?= date("Y-m-d\TH:i:s", time() + 7 * 24 * 60 * 60) ?>'>
     </label>
 
     <input type="submit" value="Send">
     <a class="btn btn-primary" id="closeFormButton">Close</a>
 </form>
 <div id="shadow" class="hidden"></div>
-

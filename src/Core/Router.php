@@ -21,9 +21,7 @@ class Router
     public function run()
     {
         $blockList = (array) json_decode(file_get_contents(Config::BLOCK_LIST));
-        // print_r($blockList);
         $cod = $_SESSION['user']['cod'] ?? "default";
-        // print_r($blockList[$cod]);
 
         $this->view->setLayout('mainLayout');
 
@@ -51,10 +49,6 @@ class Router
         }
 
 
-        //        $action = "action" . $_GET["action"];
-        // echo $_SERVER['REQUEST_URI'];
-
-        // $controller->actionShow();
-        // $controller->{"actionShow"}();
+   
     }
 }

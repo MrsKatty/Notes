@@ -15,10 +15,7 @@ use TexLab\Html\Select;
     <div class="picture_signIn">
 
 
-
-
 <div class="form_signIn_container">
-
 
 <?php
 $form = Html::create('Form')
@@ -26,8 +23,6 @@ $form = Html::create('Form')
     ->setAction("?action=edit&type=$type")
     ->setClass('form')
     ->setId("editForm");
-
-
 
 foreach ($fields as $name => $value) {
     $form->addContent(Html::create('Label')->setFor($name)->setInnerText($comments[$name])->html());

@@ -1,5 +1,3 @@
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
-
 <?php
 
 use View\View;
@@ -18,8 +16,6 @@ $table = new Model\DbTable(
     $config['mysql']['table']
 );
 
-// $table->add(['text' => 'Hello', 'name' => 'Vasya']);
-// print_r($table->get());
 $data = $table->get();
 
 $view = new View();

@@ -20,4 +20,3 @@ class AuthModel extends DbEntity
    
 }
 
-// SELECT COUNT(*) FROM `users` WHERE login = 'Kate'

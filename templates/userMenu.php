@@ -3,7 +3,6 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
         <ul class="navbar-nav mr-auto">
             <li class="nav-item<?= $controllerType == '' ? ' active' : '' ?>">
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>

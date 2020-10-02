@@ -19,9 +19,6 @@ class DefaultController extends AbstractController
                 ->setFolder('default')
                 ->setTemplate('notlogineddefault');
         }
-        // $this
-        //     ->view
-        //     ->setFolder('default')
-        //     ->setTemplate('default');
+       
     }
 }
